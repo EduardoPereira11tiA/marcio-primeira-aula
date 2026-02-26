@@ -1,0 +1,135 @@
+body {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    background: #ffffff;
+    padding: 32px 28px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 460px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Título */
+h1 {
+    margin-bottom: 24px;
+    color: #2c3e50;
+    font-size: 24px;
+}
+
+/* Menu */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    transition: 0.3s ease;
+}
+
+.menu-btn:hover {
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 6px 20px rgba(79,172,254,.4);
+}
+
+/* Botão voltar */
+.btn-voltar {
+    display: inline-block;
+    margin-top: 20px;
+    color: #7f8c8d;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-voltar:hover {
+    text-decoration: underline;
+}
+
+/* Inputs */
+input, textarea, select {
+    width: 100%;
+    padding: 13px 14px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+    transition: .2s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 0 2px rgba(79,172,254,.2);
+}
+
+/* Botão principal */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: linear-gradient(135deg, #00c853, #64dd17);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0,200,83,.35);
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* Cards dos produtos */
+li {
+    background: #f9f9f9;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border-left: 5px solid #4facfe;
+    box-shadow: 0 3px 8px rgba(0,0,0,.05);
+    transition: .2s ease;
+}
+
+li:hover {
+    transform: scale(1.01);
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .container {
+        margin: 15px;
+        padding: 25px 20px;
+    }
+}
