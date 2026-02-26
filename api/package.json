@@ -8,7 +8,7 @@
   },
   "type": "module",
   "keywords": [],
-  "author": "Nathan de Moraes",
+  "author": "Eduardo Cabral",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.6",
